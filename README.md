@@ -2,6 +2,7 @@
 kakao톡 모방 채팅구현
 
 **기본 틀
+
 카카오톡 디자인 채팅 틀
 http://dalkomit.tistory.com/53   
 +  
@@ -13,6 +14,7 @@ http://unikys.tistory.com/285
 
 
 **더 만들어 볼 기능
+
 스크롤바 끝까지 내리기
 
 한글 작성시 p태그 중복으로 나오는 문제 해결
