@@ -5,12 +5,13 @@ kakao톡 모방 채팅구현
 
 카카오톡 디자인 채팅 틀
 http://dalkomit.tistory.com/53   
-+  
+  
 스크롤 없애기
- http://recoveryman.tistory.com/54
-+
+http://recoveryman.tistory.com/54
+
 스크롤 바 맨 아래로 내리기
 http://unikys.tistory.com/285
+
 
 
 **더 만들어 볼 기능
