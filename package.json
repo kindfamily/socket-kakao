@@ -35,5 +35,13 @@
   "keywords": [],
   "author": "",
   "license": "ISC",
-  "description": ""
+  "description": "kakao톡 모방 채팅구현",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/tuntunkimpo/socket-kakao.git"
+  },
+  "bugs": {
+    "url": "https://github.com/tuntunkimpo/socket-kakao/issues"
+  },
+  "homepage": "https://github.com/tuntunkimpo/socket-kakao#readme"
 }

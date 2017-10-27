@@ -40,27 +40,29 @@
       var socket = io('http://localhost:3000/');
       
       socket.on('my message', function (msg) {
-        $('#messages').append($('<p class="talk me">').text(msg)).trim;
+        $('#messages').append($('<p class="talk me">').text(msg)).trim();
       });
 
       socket.on('other message', function (msg) {
         $('#messages').append($('<p class="talk other">').text(msg));
       });
 
-      $("#input").keyup(function(key){
-        if(key.keyCode==13){
-          socket.emit('message', $("#input").val());
-          $("#input").val("");
-          $("#messages").scrollTop(($("#messages")[0].scrollHeight));
-        }
+      // $("#input").keyup(function(key){
+      //   if(key.keyCode==13){
+      //     socket.emit('message', $("#input").val());
+      //     $("#input").val("");
+      //     $("#messages").scrollTop(($("#messages")[0].scrollHeight));
+      //   }
+      // });
+
+        $(document).ready(function(){
+          $("form").submit(function(){
+              socket.emit('message', $("#input").val());
+                $("#input").val("");
+                $("#messages").scrollTop($("#messages")[0].scrollHeight)
+          });
       });
-      
-      $("#btn").on('click', function(){
-        socket.emit('message', $("#input").val());
-        $("#input").val("");
-        $("#messages").scrollTop($("#messages")[0].scrollHeight);
-      });
-    })   
+    });   
     </script>
 
   </head>
@@ -68,8 +70,10 @@
         <div class="background view" >
             <div class ="msgbox scrollBlind" id="messages">
             </div>
+            <form onsubmit="return false">        
                 <input id="input" class="msg" type="text"/>
-                <button id="btn" class="send" type="button">전송</button>
+                <input type="submit" class="send" value="전송">
+            </form> 
         </div>    
   </body>
 </html>
