@@ -13,13 +13,14 @@ http://recoveryman.tistory.com/54
 http://unikys.tistory.com/285
 
 
+한글 작성시 p태그 중복으로 나오는 문제 해결
+>  문제확인: keyup 이랑 click 이벤트가 동시에 작동하는 문제 발생 > form으로 작성하게 하고 submit 되었을 때만 작동하게 하면 될듯
+> 문제해결: form 태그로 감싸고 jquery submit 으로 처리, 
+> 문제발생: 페이지가 리로드됨 > 문제해결: onsubmit="return false" 추가
 
 **더 만들어 볼 기능
 
 스크롤바 끝까지 내리기
-
-한글 작성시 p태그 중복으로 나오는 문제 해결
->  문제확인: keyup 이랑 click 이벤트가 동시에 작동하는 문제 발생 > form으로 작성하게 하고 submit 되었을 때만 작동하게 하면 될듯
 
 작성일시 표시
 
